@@ -1,0 +1,22 @@
+ship:
+#  name: rocinante
+  name: razorback
+  update-freq: 1000
+
+
+broker:
+  exchange:
+    direct:
+      ship:
+#        name: rocinante-direct-exchange #name for the ships exchange
+#        routing-key: __rocinante #
+        name: razorback-direct-exchange #name for the ships exchange
+        routing-key: __razorback #
+      station:
+        name: tyco-direct-exchange #name for the ships e
+        routing-key: __scheduled-update #
+    fanout:
+      name: tyco-fanout-exchange
+    queue:
+#      name: rocinante
+      name: razorback

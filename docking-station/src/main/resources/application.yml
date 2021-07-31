@@ -1,0 +1,12 @@
+station:
+  name: Tyco
+
+broker:
+  exchange:
+    direct:
+      name: tyco-direct-exchange
+      routing-key: __scheduled-update
+      queue:
+        auto-queue: auto-queue
+    fanout:
+      name: tyco-fanout-exchange
